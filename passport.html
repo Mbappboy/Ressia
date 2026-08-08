@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Republic of Ressia Passport Application Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        line-height: 1.5;
+        color: #222;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        background: #eee;
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    td, th {
+        border: 1px solid #999;
+        padding: 8px;
+        vertical-align: top;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    input[type="email"] {
+        width: 95%;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding: 4px;
+    }
+
+    textarea {
+        width: 98%;
+        height: 80px;
+    }
+
+    .checkbox {
+        margin-right: 15px;
+    }
+
+    .signature {
+        height: 50px;
+    }
+
+    .official {
+        background: #f9f9f9;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Republic of Ressia</h1>
+<h2>Passport Application Form</h2>
+
+<h2>Application Type</h2>
+<table>
+<tr>
+<td>
+<label><input type="checkbox"> First-Time Passport</label><br>
+<label><input type="checkbox"> Renewal</label><br>
+<label><input type="checkbox"> Replacement (Lost/Stolen)</label><br>
+<label><input type="checkbox"> Replacement (Damaged)</label><br>
+<label><input type="checkbox"> Name Change</label><br>
+<label><input type="checkbox"> Other:</label>
+<input type="text">
+</td>
+</tr>
+</table>
+
+<h2>Section 1 – Applicant Information</h2>
+<table>
+<tr>
+<td>Family Name (Surname)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Given Name(s)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Middle Name(s)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Previous Name(s) (if applicable)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Date of Birth (DD/MM/YYYY)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Place of Birth</td>
+<td>
+City/Town: <input type="text"><br>
+Province/Region: <input type="text"><br>
+Country: <input type="text">
+</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>
+<label><input type="checkbox"> Female</label>
+<label><input type="checkbox"> Male</label>
+<label><input type="checkbox"> Non-Binary</label>
+<label><input type="checkbox"> Prefer to Self-Describe:</label>
+<input type="text">
+</td>
+</tr>
+<tr>
+<td>Physical Description</td>
+<td>
+Height: <input type="text"> cm<br>
+Eye Color: <input type="text"><br>
+Hair Color: <input type="text">
+</td>
+</tr>
+</table>
+
+
+<h2>Section 2 – Citizenship</h2>
+<table>
+<tr>
+<td>Are you a citizen of the Republic of Ressia?</td>
+<td>
+<label><input type="checkbox"> Yes (by birth)</label><br>
+<label><input type="checkbox"> Yes (by naturalization)</label><br>
+<label><input type="checkbox"> Dual Citizen</label><br>
+<label><input type="checkbox"> Other:</label>
+<input type="text">
+</td>
+</tr>
+<tr>
+<td>National Identification Number (if issued)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Certificate of Citizenship Number (if applicable)</td>
+<td><input type="text"></td>
+</tr>
+</table>
+
+
+<h2>Section 3 – Contact Information</h2>
+<table>
+<tr>
+<td>Residential Address</td>
+<td>
+Street: <input type="text"><br>
+City/Town: <input type="text"><br>
+Province/Region: <input type="text"><br>
+Postal Code: <input type="text"><br>
+Country: <input type="text">
+</td>
+</tr>
+<tr>
+<td>Mailing Address (if different)</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Telephone</td>
+<td>
+Home: <input type="text"><br>
+Mobile: <input type="text">
+</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td><input type="email"></td>
+</tr>
+</table>
+
+
+<h2>Section 4 – Family Information</h2>
+<table>
+<tr>
+<th>Parent/Guardian 1</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Full Name</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Citizenship</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<th>Parent/Guardian 2</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>Full Name</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Citizenship</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Emergency Contact</td>
+<td>
+Name: <input type="text"><br>
+Relationship: <input type="text"><br>
+Telephone: <input type="text">
+</td>
+</tr>
+</table>
+
+
+<h2>Section 5 – Identity Documents</h2>
+<table>
+<tr>
+<td>
+<label><input type="checkbox"> National Identity Card</label><br>
+Number: <input type="text"><br><br>
+
+<label><input type="checkbox"> Birth Certificate</label><br>
+Number: <input type="text"><br><br>
+
+<label><input type="checkbox"> Citizenship Certificate</label><br>
+Number: <input type="text"><br><br>
+
+<label><input type="checkbox"> Previous Passport</label><br>
+Passport Number: <input type="text"><br><br>
+
+<label><input type="checkbox"> Other Supporting Documents</label>
+</td>
+</tr>
+</table>
+
+
+<h2>Section 6 – Passport Details</h2>
+<table>
+<tr>
+<td>Passport Book Type</td>
+<td>
+<label><input type="checkbox"> Standard</label>
+<label><input type="checkbox"> Official</label>
+<label><input type="checkbox"> Diplomatic</label>
+</td>
+</tr>
+<tr>
+<td>Validity Requested</td>
+<td>
+<label><input type="checkbox"> 5 Years</label>
+<label><input type="checkbox"> 10 Years</label>
+<label><input type="checkbox"> Other:</label>
+<input type="text">
+</td>
+</tr>
+<tr>
+<td>Additional Visa Pages Requested</td>
+<td>
+<label><input type="checkbox"> Standard</label>
+<label><input type="checkbox"> Expanded</label>
+</td>
+</tr>
+</table>
+
+
+<h2>Section 7 – Lost or Stolen Passport</h2>
+<table>
+<tr>
+<td>
+Previous Passport Number:<br>
+<input type="text"><br><br>
+
+Date Lost/Stolen:<br>
+<input type="text"><br><br>
+
+Location:<br>
+<input type="text"><br><br>
+
+Explanation:<br>
+<textarea></textarea>
+</td>
+</tr>
+</table>
+
+
+<h2>Section 8 – Declaration</h2>
+<p>
+I declare that the information provided in this application is true and complete
+to the best of my knowledge. I understand that providing false information may
+result in refusal of my application or legal penalties under the laws of the
+Republic of Ressia.
+</p>
+
+<table>
+<tr>
+<td>Applicant Signature</td>
+<td class="signature"></td>
+</tr>
+<tr>
+<td>Printed Name</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Date</td>
+<td><input type="text"></td>
+</tr>
+</table>
+
+
+<h2 class="official">For Official Use Only</h2>
+
+<table>
+<tr>
+<td>Application Number</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Date Received</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Receiving Office</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Identity Verified By</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Application Status</td>
+<td>
+<label><input type="checkbox"> Approved</label>
+<label><input type="checkbox"> Pending</label>
+<label><input type="checkbox"> Rejected</label>
+</td>
+</tr>
+<tr>
+<td>Passport Number Issued</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Issue Date</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Expiry Date</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Authorizing Officer</td>
+<td>
+Name: <input type="text"><br>
+Signature: <input type="text"><br>
+Official Seal:
+</td>
+</tr>
+</table>
+
+</body>
+</html>
